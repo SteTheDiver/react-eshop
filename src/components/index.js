@@ -9,6 +9,10 @@ import Services from "./Services";
 import Loader from "./Loader";
 import Error from "./Error";
 import Product from "./Product";
+import ProductImages from "./ProductImages";
+import AddToCart from "./AddToCart";
+import Stars from "./Stars";
+import AmountButtons from "./AmountButtons";
 
 export {
   Navbar,
@@ -22,4 +26,8 @@ export {
   Loader,
   Error,
   Product,
+  ProductImages,
+  AddToCart,
+  Stars,
+  AmountButtons,
 };
