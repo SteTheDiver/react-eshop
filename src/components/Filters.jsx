@@ -68,7 +68,6 @@ const Filters = () => {
               className="company"
             >
               {companies.map((c, index) => {
-                console.log(c, "company");
                 return (
                   <option key={index} value={c}>
                     {c}

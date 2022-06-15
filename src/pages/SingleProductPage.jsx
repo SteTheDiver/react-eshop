@@ -28,7 +28,6 @@ const SingleProductPage = () => {
   useEffect(() => {
     fetchSingleProduct(`${url}${id}`);
   }, [id]);
-  console.log(single_product);
 
   useEffect(() => {
     if (single_product_error) {
