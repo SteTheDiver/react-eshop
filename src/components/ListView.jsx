@@ -33,11 +33,15 @@ const Wrapper = styled.section`
   img {
     width: 100%;
     display: block;
-    width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: var(--radius);
     margin-bottom: 1rem;
+  }
+  @media (min-width: 992px) {
+    img {
+      width: 300px;
+    }
   }
   h4 {
     margin-bottom: 0.5rem;
