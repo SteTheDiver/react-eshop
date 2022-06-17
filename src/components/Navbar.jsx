@@ -6,21 +6,19 @@ import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
 import CartLinks from "./CartLinks";
 
+import logo from "../assets/Mediamodifier-Design.svg";
+
 import { useProductsContext } from "../context/products_context";
 
 const Navbar = () => {
-
-const {openSidebar} = useProductsContext();
+  const { openSidebar } = useProductsContext();
 
   return (
     <NavContainer>
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img
-              src="	https://react-course-comfy-sloth-store.netlify.app/static/media/logo.221f6b13.svg"
-              alt=""
-            />
+            <img src={logo} alt="" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
@@ -31,7 +29,7 @@ const {openSidebar} = useProductsContext();
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <Link to={url} >{text}</Link>
+                <Link to={url}>{text}</Link>
               </li>
             );
           })}
