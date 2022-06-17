@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import bgImgage from "../assets/don-kaveen-NFbwes_e-jI-unsplash.jpg";
+import bgImage2 from "../assets/austin-ramsey-nmXi-HCD_F8-unsplash.jpg";
+
 const Hero = () => {
   return (
     <Wrapper className="section-center">
@@ -20,8 +23,12 @@ const Hero = () => {
         </Link>
       </article>
       <article className="img-container">
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <img
+          src={bgImgage}
+          alt="Dining table"
+          className="main-img"
+        />
+        <img src={bgImage2} alt="Wood work" className="accent-img" />
       </article>
     </Wrapper>
   );
@@ -70,10 +77,12 @@ const Wrapper = styled.section`
     .accent-img {
       position: absolute;
       bottom: 0;
+      height: 30%;
       left: 0;
       width: 250px;
       transform: translateX(-50%);
       border-radius: var(--radius);
+      filter: brightness(0.9);
     }
     .img-container::before {
       content: "";
