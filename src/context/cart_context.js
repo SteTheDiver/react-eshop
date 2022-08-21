@@ -11,10 +11,10 @@ import {
 const getLocalStorage = () => {
   let cart = localStorage.getItem("cart");
 
-  if (cart.length > 0) {
+  if (cart) {
     return JSON.parse(localStorage.getItem("cart"));
   } else {
-    return (cart = []);
+    return [];
   }
 };
 
